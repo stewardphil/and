@@ -59,3 +59,19 @@ server.listen(
         console.log("Running");
     }
 );
+async function checkSignal() {
+    try {
+
+        const response = await axios.get(
+            "https://bestforextradingsetups.dpdns.org/mazikinosz/"
+        );
+
+        console.log("RAW RESPONSE:");
+        console.log(response.data);
+
+    } catch (err) {
+        console.log("ERROR:", err.message);
+    }
+}
+
+setInterval(checkSignal, 5000);
