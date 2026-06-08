@@ -19,7 +19,7 @@ async function checkSignal() {
     try {
 
         const response = await axios.get(
-            "https://bestforextradingsetups.dpdns.org/mazikinosz/"
+            "https://bestforextradingsetups.dpdns.org/mazikinosz/index.php"
         );
 
         const signal = response.data;
